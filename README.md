@@ -13,6 +13,7 @@ numpy for numerical computations and array manipulations.
 matplotlib.pyplot for plotting and visualization.
 scipy.linalg.expm for calculating the matrix exponential, used in time evolution of the wavefunction.
 scipy.sparse.diags and lil_matrix for efficiently handling sparse matrices, which are common in quantum mechanical simulations.
+
 Bi2Se3 Parameters:
 
 hbar: Reduced Planck constant, a fundamental constant in quantum mechanics.
@@ -28,11 +29,13 @@ coil_currents: Amplitudes of the currents flowing through the coils, with phases
 magnet_positions: 3D positions of any additional magnets used in the thruster.
 magnet_strengths: Magnetic field strengths of the magnets.
 field_frequency: Frequency at which the magnetic field rotates.
+
 Quantum Fluctuation Parameters:
 
 fluctuation_amplitude: Amplitude of the quantum vacuum fluctuations (this value is illustrative and needs refinement based on theoretical models).
 coupling_strength: Strength of the interaction between the electrons in Bi2Se3 and the quantum fluctuations (also illustrative and requires refinement).
 fluctuation_correlation_length: Spatial correlation length of the quantum fluctuations (again, needs theoretical refinement).
+
 Simulation Parameters:
 
 time_steps: Array of time points at which the simulation will be evaluated.
@@ -43,9 +46,11 @@ dt: Time step size for the simulation.
 Initialization:
 
 electron_wavefunction: Initializes the electron wavefunction on the Bi2Se3 surface, typically using a Gaussian wave packet or another suitable initial state.
+
 Pauli Matrices:
 
 sigma_x, sigma_y, sigma_z: Pauli matrices, fundamental mathematical objects used to describe the spin of electrons and other quantum particles.
+
 Helper Functions:
 
 initialize_wavefunction: Initializes the electron wavefunction.
@@ -54,6 +59,7 @@ calculate_momentum_transfer: Estimates the momentum transfer between electrons, 
 calculate_thrust: Calculates the potential thrust generated based on the estimated momentum transfer (also needs refinement).
 plot_electron_density: Visualizes the electron density distribution on the Bi2Se3 surface.
 plot_field_interactions: (Placeholder) Visualizes the rotating magnetic field and quantum fluctuations.
+
 Simulation Loop:
 
 Iterates over the specified time_steps.
@@ -63,6 +69,7 @@ Time-evolves the electron wavefunction using the matrix exponential of the effec
 Estimates the momentum transfer and calculates the potential thrust.
 Visualizes the electron density and field interactions (placeholders for now).
 Prints the calculated thrust at each time step.
+
 Analysis and Interpretation:
 
 Plots the calculated thrust values over time to visualize the thruster's performance.
